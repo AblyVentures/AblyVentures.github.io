@@ -25,6 +25,10 @@ jobs:
           sudo dpkg -i ${{ runner.temp }}/hugo.deb
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Download Theme Manually
+        run: |
+          mkdir -p themes/PaperMod
+          curl -L https://github.com/adityatelange/hugo-PaperMod/archive/refs/heads/master.tar.gz | tar -xz -C themes/PaperMod --strip-components=1
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Build with Hugo
