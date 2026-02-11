@@ -8,6 +8,7 @@ params:
     Title: "Ably Ventures Ltd"
     Content: "Service Before Social | High-Level CISO Governance & ICT Strategy"
 
+# This block tells Hugo it's allowed to read the theme files
 security:
   funcs:
     getenv:
@@ -18,4 +19,8 @@ security:
   http:
     methods: [GET, POST]
 
-googleAnalytics: ""
+# This ensures the theme is recognized correctly
+module:
+  hugoVersion:
+    extended: true
+    min: 0.112.0
