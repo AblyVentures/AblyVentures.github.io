@@ -1,0 +1,9 @@
+baseURL: "https://AblyVentures.github.io/"
+languageCode: en-us
+title: Ably Ventures Ltd
+theme: PaperMod
+
+params:
+  homeInfoParams:
+    Title: "Ably Ventures Ltd"
+    Content: "Service Before Social | High-Level CISO Governance & ICT Strategy"
