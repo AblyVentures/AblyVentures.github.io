@@ -7,5 +7,15 @@ params:
   homeInfoParams:
     Title: "Ably Ventures Ltd"
     Content: "Service Before Social | High-Level CISO Governance & ICT Strategy"
-    
+
+security:
+  funcs:
+    getenv:
+      - ^HUGO_
+  os:
+    read:
+      - themes/PaperMod
+  http:
+    methods: [GET, POST]
+
 googleAnalytics: ""
